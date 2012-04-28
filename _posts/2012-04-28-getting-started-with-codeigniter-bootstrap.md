@@ -94,4 +94,4 @@ soon be more tutorials up about how to use it, so stay tuned!
 ## Extra Reading
 - [CodeIgniter Bootstrap](https://github.com/sjlu/CodeIgniter-Bootstrap)
 - [CodeIgniter Documentation](http://codeigniter.com/user_guide/)
-- [Twitter Bootstrap Documentation](http://twitter.github.com/bootstrap/
+- [Twitter Bootstrap Documentation](http://twitter.github.com/bootstrap/)
