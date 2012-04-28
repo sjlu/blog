@@ -14,10 +14,10 @@ inside the database. Think it as a version control for your database schema. You
 especially when there are multiple developers so all developers don't need to worry about having the latest database
 table.
 
-## Starting Structure
+## Step by step
 
-1. You first need to create your migrations folder, `application/migrations/`.
-2. Let us start our first migration file.
+- You first need to create your migrations folder, `application/migrations/`.
+- Let us start our first migration file.
 
 `application/migrations/001_create.php`
 {% highlight php %}
@@ -67,7 +67,7 @@ class Migration_Create extends CI_Migration {
 
 You will see that you are extending a migration class that is creating the sessions table. You can see that for each Array() in fields array it imitates a column. Everytime a migration is being upstreamed, CodeIgniter will call upon `up()` and on downstream it will call `down()`. 
 
-3. Once your first migration is complete, you need to edit `application/config/migration.php` with the proper configuration variables set.
+- Once your first migration is complete, you need to edit `application/config/migration.php` with the proper configuration variables set.
 
 `$config['migration_enabled'] = TRUE;`
 
@@ -75,7 +75,7 @@ You will see that you are extending a migration class that is creating the sessi
 
 As you see here, you need to set `migration_version` everytime you create a new migration file.
 
-4. Last step! Almost there! Now we actually have to call the actual migration. In your model or controller, you need to add the following code.
+- Last step! Almost there! Now we actually have to call the actual migration. In your model or controller, you need to add the following code.
 
 {% highlight php %}
 $this->load->library('migration');
