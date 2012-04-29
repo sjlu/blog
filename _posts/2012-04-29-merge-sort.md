@@ -11,7 +11,7 @@ Well, if you didn't know already, merge sort is a comparison based sorting algor
 
 Merge sort's worst case performance is O(nlogn) and average case is the same. It is also considered a stable sort, meaning it preserves the input order of similar elements.
 
-[Merge Sort Example](http://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
+![Merge Sort Example](http://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
 {% highlight java %}
 import java.util.Vector;
