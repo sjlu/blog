@@ -12,3 +12,5 @@
 {% endcase %}
 
 {% endif %}
+
+{% include JB/analytics-providers/custom %}
