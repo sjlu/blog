@@ -47,6 +47,7 @@ class Main_Controller extends MY_Controller
 We need to ammend `config.php` to include all the controllers in the `application/core` directory. Note that means all these controllers will be loaded you will fallout of CodeIgniter conventions if you do so. Make sure you absolutely need these core functions or else you'll be loading in garabe you don't need on every request.
 
 {% highlight php %}
+/**
 | -------------------------------------------------------------------
 |  Native Auto-load
 | -------------------------------------------------------------------
