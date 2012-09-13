@@ -29,7 +29,7 @@ Now because Titanium hasn't released support for XCode 4.5, and iOS 6.0, you'll 
 
 4. If you have defined object heights, especially your window sizes or views, you want to change that with dynamic heights. If your app is used for Android, you may already have this done. Just change it with the following. Make sure to deduct whatever you need from this variable.
 
-{% hightlight javascript %}
+{% highlight javascript %}
 Titanium.Platform.displayCaps.platformHeight;
 {% endhighlight %}
 
