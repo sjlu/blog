@@ -17,7 +17,7 @@ Now because Titanium hasn't released support for XCode 4.5, and iOS 6.0, you'll 
 
 1. Well, first make sure you have XCode 4.5 installed, make sure you can run your application using the new iOS simulator "Retina 4-inch" should be the name.
 
-2. Next thing you need to do is create an splash image. Without it, XCode will not run your application in the full length and instead run it in its letterbox mode. Your image should be of size 640x1136 and named `Default-586h@2x.png` and placed in the folder `Resources/iphone`.
+2. Next thing you need to do is create an splash image. Without it, XCode will not run your application in the full length and instead run it in its letterbox mode. Your image should be of size 640x1136 and named `Default-568h@2x.png` and placed in the folder `Resources/iphone`.
 
 3. Now for some reason, you'll get a verification error if you try submitting it to the App Store, something near the lines of "armv6 is missing". Apple could be deprecating support for iOS 4.0 or maybe your new XCode doesn't have the compiler. You can fix this by adding the following to your `Resources/tiapp.xml` file.
 
