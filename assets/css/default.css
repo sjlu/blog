@@ -289,7 +289,7 @@ pre code {
 }
 
 .social-links a {
-	opacity: 0.75;
+	color: #7E7E7E;
 	text-decoration: none;
 	display: inline-block;
 	margin: 0 5px 0 5px;
@@ -302,7 +302,7 @@ pre code {
 }
 
 .social-links a:hover, .menu a:hover {
-	opacity: 1;
+	color: #2a7ead;
 }
 
 .site-title {
@@ -317,7 +317,7 @@ pre code {
 }
 
 .site-title a:hover {
-	color: #555;
+	color: #2a7ead;
 }
 
 .pagination {
