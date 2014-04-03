@@ -26,7 +26,8 @@ header, footer {
 }
 
 header a, footer a {
-	transition: color .5s;
+	-webkit-transition: color 0.15s ease;
+	transition: color 0.15s ease;
 	text-decoration: none;
 }
 
@@ -110,39 +111,6 @@ img {
 	z-index: 1;
 }
 
-img.site-icon {
-	margin-top: -75px;
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	transition-duration: .25s;
-	opacity: .9;
-}
-
-img.site-icon:hover {
-	margin-top: -80px;
-	width: 160px;
-	height: 160px;
-	opacity: 1;
-}
-
-img.site-icon-small {
-	width: 28px;
-	height: 28px;
-	border-radius: 50%;
-	vertical-align: middle;
-	margin-right: 10px;
-}
-
-img.site-icon-page {
-	width: 100px;
-	height: 100px;
-	margin-left: -40px;
-	margin-top: -120px;
-	border-radius: 50%;
-	position: absolute;
-}
-
 #nav-icon {
 	width: 30px;
 	left: 50%;
@@ -170,14 +138,12 @@ img.site-icon-page {
 
 #article a {
 	border-bottom: 2px solid #fff;
-	-webkit-transition: 0.5s ease;
-	transition: 0.5s ease;
 }
 
 #article a:hover {
 	border-bottom: 2px solid #2a7ead;
-	-webkit-transition: 0.5s ease;
-	transition: 0.5s ease;
+	-webkit-transition: color 0.15s ease;
+	transition: color 0.15s ease;
 }
 
 #details {
@@ -354,71 +320,6 @@ pre code {
 	color: #555;
 }
 
-.menu {
-	display: block;
-	cursor: pointer;
-	background-color: rgba(119, 119, 119, 0.5);
-	width: 24px;
-	height: 24px;
-	top: 14px;
-	left: 14px;
-	padding-top: 8px;
-	padding-left: 8px;
-	border-radius: 3px;
-	z-index: 2;
-	transition-duration: .5s;
-}
-
-.menu:hover, .menu:active  {
-	background-color: #777;
-}
-
-.menu-content {
-	background-color: #777;
-	width: auto;
-	top: 40px;
-	left: 14px;
-	padding-top: 5px;
-	padding-bottom: 2px;
-	padding-left: 12px;
-	padding-right: 12px;
-	border-radius: 0px 3px 3px 3px;
-	text-align: center;
-	z-index: 1;
-}
-
-.menu-content a {
-	text-transform: uppercase;
-	font-size: 11pt;
-	letter-spacing: 0.7pt;
-	font-weight: bold;
-	line-height: 26px;
-}
-
-.menu-content a:hover {
-	color: #cdcdcd;
-}
-
-.menu span {
-	color: #eee;
-	font-size: 16px;
-	height: 20px;
-	width: 20px;
-	opacity: 1;
-}
-
-.menu + input {
-	display: none;
-}
-
-.menu + input + * {
-	display: none;
-}
-
-.menu + input:checked + * {
-	display: block;
-}
-
 .pagination {
 	position: relative;
 	margin-top: 30px;
@@ -499,7 +400,8 @@ pre code {
 #post-list a {
 	color: #555;
 	text-decoration: none;
-	transition: color .5s;
+	-webkit-transition: color 0.15s ease;
+	transition: color 0.15s ease;
 }
 
 #post-list a:hover {
