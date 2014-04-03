@@ -1,10 +1,12 @@
-<div class="site-title">
-  <a href="{{ site.url }}">
-    {{site.title}}
-  </a>
-</div>
-<div class="social-links">
-	{% for social in site.social %}
-	<a href="{{ social.url }}" target="_blank" title="{{ social.desc }}"><span class="genericon genericon-{{ social.icon }}"></span></a>
-	{% endfor %}
+<div class="top clearfix">
+  <div class="site-title">
+    <a href="{{ site.url }}">
+      {{site.title}}
+    </a>
+  </div>
+  <div class="social-links">
+    {% for social in site.social %}
+    <a href="{{ social.url }}" target="_blank" title="{{ social.desc }}"><span class="genericon genericon-{{ social.icon }}"></span></a>
+    {% endfor %}
+  </div>
 </div>

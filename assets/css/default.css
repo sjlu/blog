@@ -312,11 +312,13 @@ pre code {
 	color: #555;
 }
 
+.top {
+	margin: 20px;
+}
+
 .social-links {
 	width: auto;
-	top: 20px;
-	right: 20px;
-	position: absolute;
+	float: right;
 	z-index: 2;
 }
 
@@ -338,9 +340,7 @@ pre code {
 }
 
 .site-title {
-	top: 20px;
-	left: 20px;
-	position: absolute;
+	float: left;
 	z-index: 2;
 }
 
@@ -516,4 +516,18 @@ pre code {
 .post-date {
 	font-size: 12pt;
 	color: #999;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
 }
