@@ -26,7 +26,7 @@ header, footer {
 }
 
 header a, footer a {
-	transition-duration: .25s;
+	transition: color .5s;
 	text-decoration: none;
 }
 
@@ -499,7 +499,7 @@ pre code {
 #post-list a {
 	color: #555;
 	text-decoration: none;
-	transition-duration: .5s;
+	transition: color .5s;
 }
 
 #post-list a:hover {
