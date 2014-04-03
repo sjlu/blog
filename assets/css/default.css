@@ -345,9 +345,13 @@ pre code {
 }
 
 .site-title a {
-	color: #555;
+	color: #7E7E7E;
 	font-size: 24px;
 	font-weight: 600;
+}
+
+.site-title a:hover {
+	color: #555;
 }
 
 .menu {
