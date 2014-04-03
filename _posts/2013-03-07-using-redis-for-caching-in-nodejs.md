@@ -2,10 +2,10 @@
 layout: post
 title: "Using Redis for Caching in Node.js"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
+
 
 Your web service is slow and you want to store things into memory for cache. Luckily, it's pretty easy to do this in your Node.js Express application.
 
@@ -52,7 +52,7 @@ Last, we need to store the compiled data, note that we're passing a `handler` fu
 var handler = function(response)
 {
 	response = JSON.stringify(response);
-	client.setex('some-key-value', 21600, response);		
+	client.setex('some-key-value', 21600, response);
 	res.end(response);
 };
 {% endhighlight %}

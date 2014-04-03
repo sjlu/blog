@@ -2,10 +2,10 @@
 layout: post
 title: "Inheriting a Base Controller In CodeIgniter"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
+
 
 ## Introduction
 
@@ -51,7 +51,7 @@ We need to ammend `config.php` to include all the controllers in the `applicatio
 | -------------------------------------------------------------------
 |  Native Auto-load
 | -------------------------------------------------------------------
-| 
+|
 | Nothing to do with config/autoload.php, this allows PHP autoload to work
 | for base controllers and some third-party libraries.
 |

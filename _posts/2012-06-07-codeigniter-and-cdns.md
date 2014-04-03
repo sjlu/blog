@@ -2,10 +2,10 @@
 layout: post
 title: "CodeIgniter and CDNs"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
+
 
 ## Introduction
 
@@ -60,13 +60,13 @@ function base_url($uri)
 | Content Delivery Network URL
 |--------------------------------------------------------------------------
 |
-| Loading content like .js, .png, .css files on a CDN is much better. 
+| Loading content like .js, .png, .css files on a CDN is much better.
 | This allows you to support CDNs.
 |
 |  http://example.com/
 |
 | Use the normal base_url() function and upload your /assets and /content
-| to the CDN. 
+| to the CDN.
 |
 */
 $config['cdn_url']   = '';

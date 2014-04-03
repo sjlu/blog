@@ -2,10 +2,10 @@
 layout: post
 title: "Getting Started with CodeIgniter Bootstrap"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
+
 
 ## About
 
@@ -16,7 +16,7 @@ phase and have you start developing your idea instead of developing the common w
 
 ## Getting Started
 
-Make sure you have a Apache, MySQL and PHP installation or equilvalent. 
+Make sure you have a Apache, MySQL and PHP installation or equilvalent.
 When you are done with that, you need to retrieve the CodeIgniter Boostrap code base.
 
 {% highlight bash %}
@@ -36,7 +36,7 @@ distinguish what it should deliver to the view.
 {% highlight php %}
 <?php
 class Frontpage extends CI_Controller {
-   
+
    public function index()
    {
 
@@ -69,7 +69,7 @@ route. To do so, all we need to add is one more line, to make our controller loo
 {% highlight php %}
 <?php
 class Frontpage extends CI_Controller {
-   
+
    public function index()
    {
       $this->load->view('frontpage');
@@ -80,15 +80,15 @@ class Frontpage extends CI_Controller {
 {% endhighlight %}
 
 By that single call, CodeIgniter will look in the `application/view` directory for a view
-that is name `frontpage.php`. Don't worry, it'll auto append the extension for you. 
+that is name `frontpage.php`. Don't worry, it'll auto append the extension for you.
 
-So when you go to `http://localhost/CodeIgniter-Bootstrap/index.php/frontpage` 
+So when you go to `http://localhost/CodeIgniter-Bootstrap/index.php/frontpage`
 in your browser you should see the view that you've created for that specific route.
 
 ## Conclusion
 
-You have set up a basic installation of CodeIgniter Bootstrap and created a 
-basic controller and view. Now I know this looks really basic, but there will 
+You have set up a basic installation of CodeIgniter Bootstrap and created a
+basic controller and view. Now I know this looks really basic, but there will
 soon be more tutorials up about how to use it, so stay tuned!
 
 ## Extra Reading

@@ -1,5 +1,16 @@
 ---
 layout: default
+article: true
 ---
-{% include JB/setup %}
-{% include themes/twitter/post.html %}
+
+<header class="{% if page.dark %}dark{% else %}clean{% endif %}">
+	{% include top.html %}
+</header>
+<div id="article">
+  <div id="details">
+    <span class="post-date">{{ page.date | date: "%B %-d %Y" }}</span>
+    <h1>{{ page.title }}</h1>
+  </div>
+	{{ content }}
+</div>
+<script src="/assets/js/smooth-scroll.js"></script>

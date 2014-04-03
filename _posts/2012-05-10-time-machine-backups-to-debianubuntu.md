@@ -2,10 +2,10 @@
 layout: post
 title: "Time Machine Backups to Debian/Ubuntu"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
+
 
 ## Introduction
 

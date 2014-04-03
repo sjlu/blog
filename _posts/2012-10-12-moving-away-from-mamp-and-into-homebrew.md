@@ -2,10 +2,10 @@
 layout: post
 title: "Moving Away from MAMP and into Homebrew"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
+
 
 So one of the most annoying things I ran into the PECL support from MAMP. This means no easy external extention setups for you. It also means those `php.h` headers that you need to compile against PHP with does not exist either. Don't get me wrong, MAMP is a really awesome startup to help you get your environment running but it doesn't nearly reach the point of having a barebone, compiled version on your Mac.
 
@@ -44,12 +44,12 @@ You can also edit the file `/etc/apache2/httpd.conf` to enable any of the module
 # Use name-based virtual hosting.
 #
 NameVirtualHost *:80
- 
+
 # Defualt virtual host
 # /Users/sjlu/Web
 <VirtualHost *:80>
    DocumentRoot "/Users/sjlu/Web"
- 
+
    <Directory "/Users/sjlu/Web">
        Options Indexes MultiViews FollowSymLinks
        AllowOverride All

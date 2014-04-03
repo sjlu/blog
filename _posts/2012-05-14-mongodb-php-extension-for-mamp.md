@@ -2,10 +2,10 @@
 layout: post
 title: "MongoDB PHP Extension for MAMP"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
+
 
 ## Introduction
 So you want to use MongoDB for the PHP application, well we need to install a extension for PHP so we can easily interface with it. Unforunately, using PECL will not build it correctly, so we need to install a pre-built extension from 10gen themselves.

@@ -2,10 +2,10 @@
 layout: post
 title: "Generating First Names to Gender Pairs from Twitter"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
+
 
 ## Introduction
 
@@ -63,9 +63,9 @@ As you can see, some of the data is great, some of it not so much. To build sema
 
 ## Parsing
 
-So, from the post title, I had to figure out someone's gender from that object, so I decided to parse the `description` field. In my description, I saw that I had the word "Guy" in there and from that I can assume I am a male. 
+So, from the post title, I had to figure out someone's gender from that object, so I decided to parse the `description` field. In my description, I saw that I had the word "Guy" in there and from that I can assume I am a male.
 
-This isn't 100% accurate because there are plenty of people who'll put in "Have a very loving wife" in their description. In this case, I assume that they are a female because of the word "wife", but in fact they are a male. However, the number of people who have descriptions like that is small and is why its okay for me to have these bad answers since there is a small result set. 
+This isn't 100% accurate because there are plenty of people who'll put in "Have a very loving wife" in their description. In this case, I assume that they are a female because of the word "wife", but in fact they are a male. However, the number of people who have descriptions like that is small and is why its okay for me to have these bad answers since there is a small result set.
 
 Now if I have a description with a female and male keyword, I'd cut out there because I'm not 100% positive about their gender.
 

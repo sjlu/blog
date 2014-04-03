@@ -2,10 +2,10 @@
 layout: post
 title: "Brunch.io on Mac OSX"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
+
 
 ## Introduction
 
@@ -47,7 +47,7 @@ brunch watch --server
 
 ## How it works
 
-When you run an instance of Brunch.io, it will watch it the project directory for changes. Every time you make a change, it will compile it for you. You write your code in the `app` directory and it will compile to directory named `public`. 
+When you run an instance of Brunch.io, it will watch it the project directory for changes. Every time you make a change, it will compile it for you. You write your code in the `app` directory and it will compile to directory named `public`.
 
 By default, Brunch installs Backbone.js for you, some version of HTML5 Boilerplate, Stylus and Handlebars.js. If you're not familiar with any of these, I suggest you read up on them, especially on Backbone.js. You can easily install Jade by running `npm install jade`.
 

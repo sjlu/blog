@@ -2,10 +2,10 @@
 layout: post
 title: "Lessons in Web Development"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
+
 
 So recently I joined this program to mentor a handful of students in the ropes of Web development. All of them have different levels of expertise some with no programming experience, some with actual web development experience. But I had one goal for all of them, be able to write a web application from the ground up with a database store and frontend jazz. However, I thought bigger and thought it would also be cool to share my lessons on the blog since many people asked me to teach them various parts of development.
 

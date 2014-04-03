@@ -2,10 +2,10 @@
 layout: post
 title: "Merge Sort"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
+
 
 Well, if you didn't know already, merge sort is a comparison based sorting algorithm. It completes its sorting by dividing the list into its smallest element (1) and comparing two "lists" at a time.
 
@@ -16,7 +16,7 @@ Merge sort's worst case performance is O(nlogn) and average case is the same. It
 {% highlight java %}
 import java.util.Vector;
 
-/* 
+/*
  * Mergesort using vectors (smaller compact version of LL)
  * Created by sjlu - steven lu on 5/8/2011
  */
@@ -31,11 +31,11 @@ public class mergesort
 		numbers.add(55);
 		numbers.add(32);
 		numbers.add(17);
-		
+
 		System.out.println(numbers);
 		System.out.println(sort(numbers));
 	}
-		
+
 	public static Vector<Integer> sort(Vector<Integer> numbers)
 	{
 		// the smallest partition we can contain is 1 element
@@ -43,22 +43,22 @@ public class mergesort
 		{
 			return numbers;
 		}
-		
+
 		int middle = numbers.size()/2;
 		// we partition this in half, left and right
 		Vector<Integer> left_partition = partition(numbers, 0, middle);
 		Vector<Integer> right_partition = partition(numbers, middle, numbers.size());
-		
+
 		// and then we send it back to ourself to partition the partitions
 		// the recursion will stop when we reach the smallest partition
 		left_partition = sort(left_partition);
 		right_partition = sort(right_partition);
-		
+
 		// then we merge the left and right partitions accordingly
 		return merge(left_partition, right_partition);
 	}
-	
-	// this is just giving us a partition from beg index to end index 
+
+	// this is just giving us a partition from beg index to end index
 	public static Vector<Integer> partition(Vector<Integer> vector, int begIndex, int endIndex)
 	{
 		Vector<Integer> tmp_vector = new Vector<Integer>();
@@ -68,14 +68,14 @@ public class mergesort
 		}
 		return tmp_vector;
 	}
-	
+
 	public static Vector<Integer> merge(Vector<Integer> v1, Vector<Integer> v2)
 	{
 		Vector<Integer> tmp_vector = new Vector<Integer>();
-		
+
 		int v1c = 0;
 		int v2c = 0;
-		
+
 		while (v1c < v1.size() || v2c < v2.size())
 		{
 			// if we iterated through one vector already
@@ -92,7 +92,7 @@ public class mergesort
 				v1c++;
 				continue;
 			}
-			
+
 			// we will see which element is greatest
 			// add it, and then up its count
 			if (v1.get(v1c) <= v2.get(v2c))
@@ -106,7 +106,7 @@ public class mergesort
 				v2c++;
 			}
 		}
-		
+
 		return tmp_vector;
 	}
 }

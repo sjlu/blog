@@ -2,14 +2,14 @@
 layout: post
 title: "Using CodeIgniter Migrations"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
+
 
 ## About
 
-Migrations give you the ability keep your database across all environments the same without comprimising the data 
+Migrations give you the ability keep your database across all environments the same without comprimising the data
 inside the database. Think it as a version control for your database schema. You should be doing this at all times
 especially when there are multiple developers so all developers don't need to worry about having the latest database
 table.
@@ -59,13 +59,13 @@ class Migration_Create extends CI_Migration {
 
    public function down()
    {
-      $this->dbforge->drop_table('ci_sessions'); 
+      $this->dbforge->drop_table('ci_sessions');
    }
 
 }
 {% endhighlight %}
 
-You will see that you are extending a migration class that is creating the sessions table. You can see that for each Array() in fields array it imitates a column. Everytime a migration is being upstreamed, CodeIgniter will call upon `up()` and on downstream it will call `down()`. 
+You will see that you are extending a migration class that is creating the sessions table. You can see that for each Array() in fields array it imitates a column. Everytime a migration is being upstreamed, CodeIgniter will call upon `up()` and on downstream it will call `down()`.
 
 - Once your first migration is complete, you need to edit `application/config/migration.php` with the proper configuration variables set.
 

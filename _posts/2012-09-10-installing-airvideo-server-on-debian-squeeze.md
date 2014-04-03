@@ -2,10 +2,10 @@
 layout: post
 title: "Installing AirVideo Server on Debian Squeeze"
 description: ""
-category: 
+category:
 tags: []
 ---
-{% include JB/setup %}
+
 
 ## Introduction
 
@@ -59,7 +59,7 @@ wget http://s3.amazonaws.com/AirVideo/Linux-2.4.6-beta3/AirVideoServerLinux.jar
 Next, we need to create the `properties.conf` file that AirVideo will parse when starting. Create the file `/etc/airvideo/properties.conf` with the following content. Remember to replace everything that is in `<>`.
 
 {% highlight yaml %}
-folders = TV:<location_to_media>                                                                                     
+folders = TV:<location_to_media>
 subtitles.encoding = windows-150
 subtitles.font = Verdana
 password = <some_password>
